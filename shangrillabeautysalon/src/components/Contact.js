@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/global.css"; // Import global styles
 
 const Contact = () => {
-  return (
+  return ( 
     <section className="contact">
       <h2 className="section-title">Contact Us</h2>
       <p className="contact-description">

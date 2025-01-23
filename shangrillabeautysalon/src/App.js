@@ -6,6 +6,7 @@ import Hero from './components/Hero';
 import Destinations from './components/Destinations';
 import paris from './assets/images/destination1.jpeg'
 import shoes from './assets/images/service2.jpeg'
+import mani from './assets/images/service4.jpeg'
 import Services from './components/Services';
 import Packages from './components/Packages';
 import Contact from './components/Contact';
@@ -67,6 +68,11 @@ const serviceData = [
     image: paris,
     description: "Pamper your hands and feet with our expert care.",
   },
+  {
+    title: "Mani",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
 ];
 
 const destinationData = [
@@ -83,6 +89,11 @@ const destinationData = [
   },
   {
     name: "Tokyo",
+    image: paris,
+    description: "Discover the perfect blend of tradition and modernity.",
+  },
+  {
+    name: "Azerbaijan",
     image: paris,
     description: "Discover the perfect blend of tradition and modernity.",
   },
