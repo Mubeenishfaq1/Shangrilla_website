@@ -7,6 +7,8 @@ import Destinations from './components/Destinations';
 import paris from './assets/images/destination1.jpeg'
 import shoes from './assets/images/service2.jpeg'
 import mani from './assets/images/service4.jpeg'
+import hairstyle from'./assets/images/service6.jpeg'
+import eyebrow from './assets/images/service12.jpeg'
 import Services from './components/Services';
 import Packages from './components/Packages';
 import Contact from './components/Contact';
@@ -49,23 +51,248 @@ const packageData = [
 
 const serviceData = [
   {
-    title: "Hair Styling",
-    image: paris,
-    description: "Get the perfect hairstyle for any occasion.",
-  },
-  {
-    title: "Shoes Styling",
+    title: "Hair Cut",
     image: shoes,
-    description: "Get the perfect hairstyle for any occasion.",
+    description: "Price: 60 AED",
   },
   {
-    title: "Facial Treatments",
+    title: "Hair Style",
+    image: hairstyle,
+    description: "Price: 120 AED",
+  },
+  {
+    title: "Blow Dry",
     image: paris,
     description: "Relax and rejuvenate with our facial services.",
   },
   {
-    title: "Manicure & Pedicure",
+    title: "Trimming",
     image: paris,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Fair Style",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Hair Extension",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Hair Up",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Roots Color",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Hair Coloring",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "High or Low Lights Roots",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "High or Low Light Hair",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Hair Treatment",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Hair Straightening",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Blow Out",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Hair Botox",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Bridal Hair",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Bridal Meakup",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Eye Lash Extension",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Eye Lash Extension with Eye Liner",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Perm Lashes",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Eye Lash Coloring",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Make Up",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Eye Lashes 1*1",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Full Legs",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Half Legs",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Full Arm",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Half Arm",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Under Arm",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Full Body",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Eye Brow Threading",
+    image: eyebrow,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Upper Lip Threading",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Eye Brow & Upper Lip Threading",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Full Face Threading",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Bikini Line",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Manicure",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Pedicure",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Mani",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Mani",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Mani",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Mani",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Mani",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Mani",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Mani",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Mani",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Mani",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Mani",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Mani",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Mani",
+    image: mani,
+    description: "Pamper your hands and feet with our expert care.",
+  },
+  {
+    title: "Mani",
+    image: mani,
     description: "Pamper your hands and feet with our expert care.",
   },
   {
