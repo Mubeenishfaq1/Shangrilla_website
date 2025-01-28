@@ -3,7 +3,7 @@ import "../styles/global.css"; // Import global styles
 
 const Contact = () => {
   return ( 
-    <section className="contact">
+    <section id="contact" className="contact">
       <h2 className="section-title">Contact Us</h2>
       <p className="contact-description">
         Have questions or need assistance? Fill out the form below, and we'll get back to you as soon as possible.

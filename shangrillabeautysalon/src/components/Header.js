@@ -12,10 +12,11 @@ const Header = () => {
         </div>
         <ul>
           <li><a href="#contact">Contact Us</a></li>
-          <li><a href="#destinations">Cart</a></li>
+          {/* <li><a href="#destinations">Cart</a></li> */}
           {/* <li><a href="#services">Services</a></li>
           <li><a href="#home">Home</a></li> */}
           {/* <li><a href="#login">Login</a></li> */}
+          <li><Link to="/cart">Cart</Link></li> {/* Link to Login page */}
           <li><Link to="/login">Login</Link></li> {/* Link to Login page */}
         </ul>
       </nav>

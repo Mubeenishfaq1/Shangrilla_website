@@ -5,6 +5,8 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Destinations from './components/Destinations';
 import Services from './components/Services';
+import Whatsapp from './components/whatsapp';
+import Cart from './pages/Cart';
 import paris from './assets/images/destination1.jpeg'
 import hairee from './assets/images/hair care.jpg'
 import treatmnt from './assets/images/hair treatment 1.jpg'
@@ -70,32 +72,38 @@ import Register from './components/Register';
 const packageData = [
   {
     title: "Basic Package",
-    price: 50,
+    price: 200,
     features: [
+      "Any 5 to 7 iteams",
       "Haircut",
       "Basic Facial",
-      "Manicure",
+      "Manicure & pedicure",
+      "threading & Waxing",
+      "Anti-Aging Facial ",
     ],
   },
   {
     title: "Premium Package",
-    price: 100,
+    price: 225,
     features: [
+      "Any 9 iteams",
       "Haircut & Styling",
       "Advanced Facial",
       "Manicure & Pedicure",
+      "Spa Treatment",
       "Spa Treatment",
     ],
   },
   {
     title: "Luxury Package",
-    price: 150,
+    price: 250,
     features: [
-      "Haircut & Styling",
-      "Luxury Facial",
-      "Full Body Massage",
+      "Any 11 iteams",
+      "Stomach & Naval Waxing",
+      "Mythic Cream Hair Spa (2 Items)",
+      "Back Polish, Scrub and Mask",
       "Manicure & Pedicure",
-      "Special Gift",
+      "Full Legs Waxing-Fruit Wax",
     ],
   },
 ];
@@ -124,17 +132,17 @@ const serviceData = [
   {
     title: "Fair Style",
     image: fairstyle,
-    description: "Price: 60 AED",
+    description: "Price: 112 AED",
   },
   {
     title: "Hair Extension",
     image: hairextension ,
-    description: "Price: 60 AED",
+    description: "By Quotation",
   },
   {
     title: "Hair Up",
     image: hairup,
-    description: "Price: 60 AED",
+    description: "Price: 370 AED",
   },
   {
     title: "Roots Color",
@@ -144,12 +152,12 @@ const serviceData = [
   {
     title: "Hair Coloring",
     image: haircolor,
-    description: "Price: 400 AED",
+    description: "Price: 300 AED",
   },
   {
     title: "High or Low Lights Roots",
     image: upben,
-    description: "Price: 350 AED",
+    description: "Price: 260 AED",
   },
   {
     title: "High or Low Light Hair",
@@ -159,17 +167,17 @@ const serviceData = [
   {
     title: "Hair Treatment",
     image: hairtreat,
-    description: "Price: 150 AED",
+    description: "Price: 150-350 AED",
   },
   {
     title: "Hair Straightening",
     image: hairstr,
-    description: "Price: 60 AED",
+    description: "Price: 560 AED",
   },
   {
     title: "Blow Out",
     image: blowout,
-    description: "Price: 60 AED",
+    description: "Price: 1100 AED",
   },
   {
     title: "Hair Botox",
@@ -179,12 +187,12 @@ const serviceData = [
   {
     title: "Bridal Hair",
     image: bridalhair,
-    description: "Price: 60 AED",
+    description: "Price: 1500 AED",
   },
   {
     title: "Bridal Meakup",
     image: bridal,
-    description: "Price: 60 AED",
+    description: "Price: 1500 AED",
   },
   {
     title: "Eye Lash Extension",
@@ -194,37 +202,37 @@ const serviceData = [
   {
     title: "Eye Lash Extension with Eye Liner",
     image: eyel,
-    description: "Price: 60 AED",
+    description: "Price: 170 AED",
   },
   {
     title: "Perm Lashes",
     image: prem,
-    description: "Price: 60 AED",
+    description: "Price: 225 AED",
   },
   {
     title: "Eye Lash Coloring",
     image: eyecolor,
-    description: "Price: 60 AED",
+    description: "Price: 250 AED",
   },
   {
     title: "Make Up",
     image: makeup,
-    description: "Price: 60 AED",
+    description: "Price: 370 AED",
   },
   {
     title: "Eye Lashes 1*1",
     image: eyeleshe,
-    description: "Price: 60 AED",
+    description: "Price: 250-300 AED",
   },
   {
     title: "Full Legs Waxing",
     image: legk,
-    description: "Price: 60 AED",
+    description: "Price: 110 AED",
   },
   {
     title: "Half Legs Waxing",
     image: halfleg,
-    description: "Price: 60 AED",
+    description: "Price: 80 AED",
   },
   {
     title: "Full Arm",
@@ -284,77 +292,77 @@ const serviceData = [
   {
     title: "French Manicure",
     image: alee,
-    description: "Pamper your hands and feet with our expert care.",
+    description: "Price: 120 AED",
   },
   {
     title: "French Pedicure",
     image: mani,
-    description: "Pamper your hands and feet with our expert care.",
+    description: "Price: 120 AED",
   },
   {
     title: "French Manicure and Pedicure",
     image: frenchmani,
-    description: "Pamper your hands and feet with our expert care.",
+    description: "Price: 180 AED",
   },
   {
     title: "Polish Change",
     image: polishchan,
-    description: "Pamper your hands and feet with our expert care.",
+    description: "Price: 20 AED",
   },
   {
     title: "Acrylic",
     image: frenchi,
-    description: "Pamper your hands and feet with our expert care.",
+    description: "Price: 260 AED",
   },
   {
     title: "French Polish Change",
     image: frenc,
-    description: "Pamper your hands and feet with our expert care.",
+    description: "Price: 55 AED",
   },
   {
     title: "Gelish Manicure",
     image: gali,
-    description: "Pamper your hands and feet with our expert care.",
+    description: "Price: 200 AED",
   },
   {
     title: "Gelish Pedicure",
     image: gelishped,
-    description: "Pamper your hands and feet with our expert care.",
+    description: "Price: 200 AED",
   },
   {
     title: "Gelish French Manicure",
     image: core,
-    description: "Pamper your hands and feet with our expert care.",
+    description: "Price: 130 AED",
   },
   {
     title: "Gelish French Pedicure",
     image: todo,
-    description: "Pamper your hands and feet with our expert care.",
+    description: "Price: 150 AED",
   },
   {
     title: "Gelish French Mani and Pedicure",
     image: cocs,
-    description: "Pamper your hands and feet with our expert care.",
+    description: "Price: 330 AED",
   },
   {
     title: "Gelish Extention",
     image: loost,
-    description: "Pamper your hands and feet with our expert care.",
+    description: "Price: 260 AED",
   },
   {
     title: "Fake Nails",
     image: fakee,
-    description: "Pamper your hands and feet with our expert care.",
+    description: "Price: 60 AED",
   },
   {
     title: "Nail Repair",
     image: nail,
-    description: "Pamper your hands and feet with our expert care.",
+    description: "Price: 35 AED",
   },
   {
     title: "Gelish Removal",
     image: ecoc,
-    description: "Pamper your hands and feet with our expert care.",
+    description: "Price: 40 AED",
   },
 ];
 
@@ -362,33 +370,32 @@ const destinationData = [
   {
     name: "Waxing and Threading",
     image: paris,
-    description: "Experience the crystal-clear waters and white sandy beaches.",
-    price: "50$"
+    description: "Precise threading and smooth waxing for flawless, hair-free skin at your doorstep!",
   },
   {
     name: "Hair Care",
     image: hairee,
-    description: "Explore the city of love and its iconic Eiffel Tower.",
+    description: "Nourishing hair care services for healthy, shiny, and beautifully styled hair at home!",
   },
   {
     name: "Hair Treatment",
     image: treatmnt,
-    description: "Discover the perfect blend of tradition and modernity.",
+    description: "Revitalizing hair treatments to restore strength, shine, and smoothness, tailored to your hair’s needs!",
   },
   {
     name: "Bridal",
     image: brideel,
-    description: "Discover the perfect blend of tradition and modernity.",
+    description: "Expert bridal services for a flawless look on your special day, from makeup to hairstyling and more!",
   },
   {
     name: "Make Up",
     image: makup,
-    description: "Discover the perfect blend of tradition and modernity.",
+    description: "Professional makeup services for a flawless, long-lasting look, perfect for any occasion!",
   },
   {
     name: "Nails",
     image: nal,
-    description: "Discover the perfect blend of tradition and modernity.",
+    description: "Pampering nail services for perfectly shaped, vibrant, and stylish nails, right at your doorstep!",
   },
 ];
 
@@ -403,6 +410,7 @@ function App() {
         <Routes>
           <Route path="/login" element={<Login />} /> {/* Route to Login page */}
           <Route path="/register" element={<Register />} />
+          <Route path="/cart" element={<Cart />} />
           <Route path="/" element={
             <>
               <Hero 
@@ -415,6 +423,7 @@ function App() {
               <Services services={serviceData} />
               <Packages packages={packageData} />
               <Contact />
+              <Whatsapp/>
               <Footer />
             </>
           } />

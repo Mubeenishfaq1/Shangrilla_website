@@ -26,7 +26,7 @@ const Login = () => {
       // Redirect or handle successful login here
       alert('Login successful');
       // Redirect to another page, e.g., dashboard
-      navigate('/dashboard');  // Use navigate() to redirect
+      navigate('/');  // Use navigate() to redirect
     } catch (error) {
       setLoading(false);
       setErrorMessage('Invalid credentials or server error');

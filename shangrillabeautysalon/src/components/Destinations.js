@@ -15,7 +15,7 @@ const Destinations = ({ destinations }) => {
             />
             <h3 className="destination-name">{destination.name}</h3>
             <p className="destination-description">
-              PRICE: {destination.price}
+              {destination.description}
             </p>
           </div>
         ))}
